@@ -3,7 +3,7 @@
 #include "sumovore.h"
 #include "motor_control.h"
 #include "interrupts.h"
-
+//AAAAAAAAAAAAAAAAA
 // main acts as a cyclical task sequencer
 void main(void)
 {
@@ -15,6 +15,7 @@ void main(void)
     printf("\n\rSimple curve follower -- with error codes\n\r"); 
     ClrWdt();         // defined in <p18f4525.h>
     threshold = 450u;
+
     while(1)
     {
         check_sensors();// from sumovore.c
