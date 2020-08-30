@@ -3,7 +3,7 @@
 #include "sumovore.h"
 #include "motor_control.h"
 #include "interrupts.h"
-//AAAAAAAAAAAAAAAAA
+
 // main acts as a cyclical task sequencer
 void main(void)
 {
@@ -24,7 +24,7 @@ void main(void)
 	                    // If you need to use the LED's for
 	                    // a different purpose change this line
 	                    // and make your own LED setting function
-        motor_control();    // function from motor_control.c 
+        motor_control();    // function from motor_control.c
         ClrWdt();           // defined in <p18f4525.h>
         if(lvd_flag_set())  LVtrap();
     }
